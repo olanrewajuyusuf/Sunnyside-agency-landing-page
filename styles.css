@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+
+body {
+    max-width: 1440px;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    margin-inline: auto;
+    height: min-content;
+}
+.header-desktop, .desk {
+    display: none;
+}
+.header-mobile {
+    width: 100%;
+    position: relative;
+    top: -245px;
+    z-index: -1;
+    margin-bottom: -250px;
+}
+header {
+    width: 100%;
+    background-color: rgb(40, 201, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.menu {
+    cursor: pointer;
+}
+nav {
+    width: 88%;
+    padding: 15px 0;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1;
+    display: none;
+}
+.angle {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(0, 0%, 100%);
+    transform: skewY(-50deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: hsl(232, 10%, 55%);
+    margin: 30px 0;
+}
+a:hover {
+    color: hsl(7, 99%, 70%);
+}
+.contact {
+    width: 120px;
+    font-size: 14px;
+    font-family: 'Fraunces', serif;
+    margin-inline: auto;
+    padding: 13px 0;
+    border-radius: 30px;
+    background-color: hsl(51, 100%, 49%);
+    color: hsl(212, 27%, 19%);
+}
+.contact:hover {
+    background-color: hsl(232, 10%, 55%);
+    color: hsl(0, 0%, 100%);
+}
+h1 {
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    letter-spacing: 8px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 120px;
+}
+.arrow {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+}
+#services, #project {
+    text-align: center;
+    line-height: 30px;
+    color: hsl(198, 62%, 26%);
+}
+.transform {
+    position: relative;
+}
+.transform img {
+    width: 100%;
+    object-fit: cover;
+}
+.transforming {
+    display: flex;
+    flex-direction: column;
+}
+.eggy {
+    order: 1;
+}
+.brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.brand h2, .brand span {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+.brand h2 {
+    font-size: 40px;
+    line-height: 45px;
+}
+.brand span {
+    background-color: hsl(7, 99%, 70%);
+    height: 7px;
+    border-radius: 30px;
+    padding: 0 5px;
+    margin: 30px 0;
+    position: relative;
+    width: 120px;
+}
+.brand .span {
+    background-color: hsl(51, 100%, 49%);
+}
+.brand span small {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -18px;
+}
+.graphic {
+    width: 100%;
+    position: absolute;
+    bottom: 7%;
+    padding: 0 10px;
+    
+}
+.graphic h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+.design {
+    color: hsl(167, 40%, 24%);
+}
+.block {
+    margin-top: -10px;
+}
+#project {
+    text-align: center;
+    margin-top: 50px;
+}
+#project strong {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+#project .testimonial {
+    letter-spacing: 5px;
+}
+#project .testimonial, #project small {
+    color: hsl(210, 4%, 67%);
+}
+.person {
+    margin: 60px 0;
+    color: hsl(213, 9%, 39%);
+    padding: 0 13px;
+}
+.person img {
+    width: 90px;
+    border-radius: 50%;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.projects img {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    background-color: hsl(168, 69%, 72%);
+    color: hsl(168, 34%, 41%);
+    padding: 50px 20px;
+    text-align: center;
+}
+footer .logo {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 50px;
+    font-family: 'Fraunces', serif;
+}
+footer .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+footer div a {
+    color: hsl(168, 34%, 41%);
+}
+.social img {
+    margin-inline: 10px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 850px){
+    header {
+        padding: 10px 30px;
+        top: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: unset;
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        background-color: unset;
+    }
+    a {
+        margin: 0;
+        color: hsl(0, 0%, 100%);
+    }
+    a:hover {
+        color: hsl(51, 100%, 49%);
+    }
+    .contact {
+        margin: 0;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .contact:hover {
+        background-color: rgb(144, 222, 233);
+    }
+    .menu, .header-mobile, .mobo, .angle {
+        display: none;
+    }
+    .header-desktop {
+        display: block;
+        width: 100%;
+        position: relative;
+        top: -265px;
+        z-index: -1;
+        margin-bottom: -265px;
+    }
+    h1 {
+        font-size: 3.5vw;
+        margin-top: 150px;
+    }
+    .arrow {
+        position: absolute;
+        left: 50%;
+        top: 21%;
+        transform: translate(-50%);
+    }
+    .desk {
+        display: block;
+    }
+    .transforming, .stand-out, .graph {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .brand {
+        font-size: 1.2vw;
+        text-align: left;
+        align-items: flex-start;
+        padding: 0 130px;
+        line-height: 4vh;
+    }
+    .brand h2 {
+        font-size: 2.8vw;
+        line-height: 5.5vh;
+    }
+    .egg {
+        order: 1;
+    }
+    .brand span small {
+        left: 5%;
+    }
+    .graphic {
+        font-size: 1.2vw;
+        padding: 22%;
+        top: 30%;
+    }
+    .graphic h3 {
+        font-size: 2vw;
+    }
+    .block {
+        margin: 0;
+    }
+    #project {
+        padding-top: 60px;
+    }
+    .testimony {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 30px 100px 60px;
+    }
+    .projects {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    footer .nav {
+        justify-content: center;
+        gap: 40px;
+    }
+}
